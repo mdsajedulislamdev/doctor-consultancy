@@ -1,0 +1,106 @@
+.headDiv {
+  width: 100vw;
+  min-height: 30vw;
+}
+/* ==============Content Div==================== */
+.contentDiv {
+  width: 25vw;
+  height: fit-content;
+  position: absolute;
+  top: 28%;
+  left: 20%;
+}
+.advice {
+  text-align: left;
+}
+.paragraph {
+  width: 20vw;
+  font-size: 1.3vw;
+  font-family: sans-serif, lato;
+  padding-bottom: 20px;
+  word-break: normal;
+  text-align: left;
+}
+.button {
+  border: none;
+  outline: none;
+  padding: 1vw;
+  font-size: 1.5vw;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  background: #ff8b42;
+  transition: 0.3s ease-in-out;
+}
+.button:hover {
+  background: #c9870d;
+}
+.sideDesign {
+  width: 7vw;
+  position: absolute;
+  top: 13vw;
+  left: 0%;
+}
+.grid {
+  width: 7vw;
+  position: fixed;
+  top: 85%;
+  left: 43%;
+  z-index: 1;
+}
+/* ==================Image Group One======================== */
+.groupOneDiv {
+  position: absolute;
+  top: 13vw;
+  left: 46vw;
+}
+.groupOneImage {
+  width: 21vw;
+}
+/* ==================Image Group Two======================== */
+.groupTwoDiv {
+  position: absolute;
+  top: 9vw;
+  left: 68vw;
+}
+.groupTwoImage {
+  width: 23vw;
+}
+/* ===============Responsive============================== */
+@media only screen and (max-width: 600px) {
+  .contentDiv {
+    width: 30vw;
+    height: fit-content;
+    position: absolute;
+    top: 9%;
+    left: 15%;
+  }
+  .advice {
+    text-align: left;
+    font-size: 15px;
+  }
+  .paragraph {
+    width: 25vw;
+    font-size: 2.3vw;
+    font-family: sans-serif, lato;
+    padding-bottom: 5px;
+    word-break: break-all;
+    text-align: left;
+  }
+  .button {
+    padding: 1.5vw;
+    font-size: 2vw;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    background: #ff8b42;
+  }
+  .grid {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .grid {
+    display: none;
+  }
+}

@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.Navbar {
+  width: 100vw;
+  height: 8vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 1.5vw;
+  background: linear-gradient(to right, rgba(10, 10, 10, 0.726), rgba(10, 10, 10, 0.61), rgba(10, 10, 10, 0.719));
+}
+.Navbar a {
+  display: block;
+  padding: 0.3vw 0.5vw;
+  font-size: 1.5vw;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+.Navbar a:hover {
+  transition: 0.2s ease-in-out;
+  color: #e99905;
+  border-bottom: 1px solid oldlace;
+}
+.NavTitle {
+  position: relative;
+  left: 5vw;
+}
+.Navbar .NavItem {
+  position: relative;
+  left: 15vw;
+}
+.Navbar .Button {
+  border: none;
+  outline: none;
+  padding: 0.6vw 0.8vw;
+  background: #ff8b42;
+  color: white;
+  font-weight: bold;
+  font-size: 1vw;
+  border-radius: 3px;
+  position: relative;
+  left: 23vw;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.Navbar .Button:hover {
+  background: #fdaf1e;
+}
+.Navbar a:nth-child(1) {
+  border-bottom: none;
+  color: #ff8b42;
+  font-size: 1.7vw;
+  transition: 0.3s ease-in-out;
+}
+.Navbar a:nth-child(1):hover {
+  color: greenyellow;
+}
+
+/* ============Responsive MAX600px=============================== */
+@media only screen and (max-width: 600px) {
+  .Navbar {
+    display: none;
+  }
+  .NavTitle {
+    display: none;
+  }
+  .mobileMenu {
+    width: 50%;
+    height: 300px;
+    display: block;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+    transition: 0.5s ease-in;
+    padding-top: 35px;
+    overflow: hidden;
+    border-radius: 0px 3px 3px 3px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6));
+  }
+  .NavItem {
+    display: block;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .iconCross {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    font-size: 35px;
+    left: 5px;
+    top: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  .iconBurger {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    font-size: 30px;
+    font-weight: bolder;
+    left: 5px;
+    top: 5px;
+    padding: 3px;
+    border-radius: 3px;
+    color: #ffffff;
+    background: black;
+    cursor: pointer;
+  }
+  #loginButton {
+    outline: none;
+    border: none;
+    padding: 5px;
+    color: white;
+    border-radius: 3px;
+    margin-left: 10px;
+    background: #ff8b42;
+  }
+  #signUpButton {
+    outline: none;
+    border: none;
+    padding: 5px;
+    color: white;
+    border-radius: 3px;
+    margin-left: 10px;
+    background: #ff8b42;
+  }
+}
+
+/* ============Responsive MIN60px and MIN768px=============================== */
+@media only screen and (min-width: 601px) and (min-width: 768px) {
+  .iconCross {
+    display: none;
+  }
+  .iconBurger {
+    display: none;
+  }
+  .mobileMenu {
+    display: none;
+  }
+}
