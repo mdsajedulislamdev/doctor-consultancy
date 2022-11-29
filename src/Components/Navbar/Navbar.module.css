@@ -65,12 +65,17 @@
 
 /* ============Responsive MAX600px=============================== */
 @media only screen and (max-width: 600px) {
-  .Navbar {
+  .Navbar a {
+    display: none;
+  }
+  .Navbar .Button {
     display: none;
   }
   .NavTitle {
     display: none;
   }
+
+  /* ===========Mobile Menu======================== */
   .mobileMenu {
     width: 50%;
     height: 300px;
@@ -98,7 +103,7 @@
     z-index: 1;
     font-size: 35px;
     left: 5px;
-    top: 5px;
+    top: 3px;
     color: white;
     cursor: pointer;
   }
@@ -106,11 +111,11 @@
     display: block;
     position: absolute;
     z-index: 1;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bolder;
     left: 5px;
-    top: 5px;
-    padding: 3px;
+    top: 3px;
+    padding: 2px;
     border-radius: 3px;
     color: #ffffff;
     background: black;
@@ -145,6 +150,12 @@
     display: none;
   }
   .mobileMenu {
+    display: none;
+  }
+  .falseNavbar {
+    display: none;
+  }
+  .falseNavbarTitle {
     display: none;
   }
 }

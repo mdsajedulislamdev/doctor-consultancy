@@ -1,0 +1,59 @@
+.title {
+  text-align: center;
+  font-size: 3vw;
+  font-weight: bold;
+}
+.paragraph {
+  text-align: center;
+  font-size: 1.5vw;
+}
+.image {
+  width: 25vw;
+  height: fit-content;
+}
+.mainDiv {
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+  padding-top: 2vw;
+}
+.contentDiv {
+  width: 25vw;
+  height: 8vw;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2vw;
+  padding: 0.5vw;
+  background: #ffffff;
+  border: 1px solid #0089ba;
+  box-shadow: 6px 20px 20px rgba(211, 237, 246, 0.8);
+  border-radius: 0px 0px 20px 20px;
+  position: relative;
+}
+.doctorName {
+  font-size: 1.4vw;
+}
+.doctorTitle {
+  padding-top: 0.6vw;
+  font-size: 1.2vw;
+}
+.doctorDescription {
+  width: 16vw;
+  padding-top: 0.6vw;
+  font-size: 1.1vw;
+}
+.button {
+  width: 6vw;
+  height: 3vw;
+  display: block;
+  position: absolute;
+  right: 0.6vw;
+  bottom: 1vw;
+  border: none;
+  outline: none;
+  background: #ff8b42;
+  font-size: 0.8vw;
+  border-radius: 0.4vw;
+  color: white;
+  padding: 0.3vw;
+}

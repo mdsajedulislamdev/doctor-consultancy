@@ -11,20 +11,20 @@ const Navbar = () => {
         <a className={styles.NavTitle} href="/">
           DOCTOR CONSULTANCY
         </a>
-        <a className={styles.NavItem} href="/">
+        <a className={styles.NavItem} href="/home">
           Home
         </a>
         <a className={styles.NavItem} href="/service">
           Service
         </a>
-        <a className={styles.NavItem} href="/about">
-          About
+        <a className={styles.NavItem} href="/schedule">
+          Schedule
         </a>
-        <a className={styles.NavItem} href="/contact">
-          Contact
+        <a className={styles.NavItem} href="/care">
+          Care
         </a>
-        <a className={styles.NavItem} href="/notice">
-          Notice
+        <a className={styles.NavItem} href="/expert">
+          Expert
         </a>
         <button className={styles.Button} id={styles.loginButton} href="#">
           LOGIN
@@ -39,6 +39,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-// BsListUl
-// BsX
